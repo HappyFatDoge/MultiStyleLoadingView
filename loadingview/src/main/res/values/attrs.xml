@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AlarmClockLoadingView">
+        <attr name="timeForSpeed" format="integer|reference" />
+        <attr name="progress" format="integer|reference" />
+        <attr name="progressTextSize" format="dimension|reference" />
+        <attr name="progressTextColor" format="color|reference" />
+        <attr name="progressDescription" format="string|reference" />
+        <attr name="desTextSize" format="dimension|reference" />
+        <attr name="desTextColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="HappyFatWoodLoadingView">
+        <attr name="withProgressDisplay" format="boolean" />
+        <attr name="fatWoodProgress" format="integer|reference" />
+        <attr name="fatWoodProgressTextSize" format="dimension|reference" />
+        <attr name="fatWoodProgressTextColor" format="color|reference" />
+        <attr name="fatWoodProgressDescription" format="string|reference" />
+        <attr name="fatWoodDesTextSize" format="dimension|reference" />
+        <attr name="fatWoodDesTextColor" format="color|reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    alarm clock    -->
+    <string name="alarm_clock_background_des">闹钟底图</string>
+    <string name="alarm_clock_expression">表情</string>
+    <string name="alarm_clock_progress">100%</string>
+    <string name="alarm_clock_description">下载中…</string>
+
+    <!--    happy fat wood    -->
+    <string name="happy_fat_wood_expression">表情</string>
+    <string name="happy_fat_wood_bubble">表情气泡</string>
+
+</resources>
