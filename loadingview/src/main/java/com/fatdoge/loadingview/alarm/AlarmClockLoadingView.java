@@ -1,4 +1,4 @@
-package com.fatwood.loadingview.alarm;
+package com.fatdoge.loadingview.alarm;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -14,9 +14,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.fatwood.lib_multistyleloadingview.R;
-import com.fatwood.loadingview.utils.ConstantUtils;
-import com.fatwood.loadingview.utils.DisplayUtils;
+import com.fatdoge.loadingview.R;
+import com.fatdoge.loadingview.utils.ConstantUtils;
+import com.fatdoge.loadingview.utils.DisplayUtils;
 
 /**
  * @author HappyFatWood 2575490085@qq.com

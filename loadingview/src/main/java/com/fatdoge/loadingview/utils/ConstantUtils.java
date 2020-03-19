@@ -1,4 +1,4 @@
-package com.fatwood.loadingview.utils;
+package com.fatdoge.loadingview.utils;
 
 /**
  * @author HappyFatWood 2575490085@qq.com

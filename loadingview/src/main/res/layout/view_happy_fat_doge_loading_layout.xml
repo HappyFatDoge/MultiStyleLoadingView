@@ -13,16 +13,16 @@
             android:id="@+id/image_expression"
             android:layout_width="@dimen/common_width_100dp"
             android:layout_height="@dimen/common_height_100dp"
-            android:src="@drawable/fat_wood_thinking00"
-            android:contentDescription="@string/happy_fat_wood_expression" />
+            android:src="@drawable/fat_doge_thinking00"
+            android:contentDescription="@string/happy_fat_doge_expression" />
 
         <ImageView
             android:id="@+id/image_bubble"
             android:layout_width="@dimen/common_width_100dp"
             android:layout_height="@dimen/common_height_100dp"
-            android:src="@drawable/fat_wood_angry_bubble"
+            android:src="@drawable/fat_doge_angry_bubble"
             android:visibility="gone"
-            android:contentDescription="@string/happy_fat_wood_bubble" />
+            android:contentDescription="@string/happy_fat_doge_bubble" />
 
         <TextView
             android:id="@+id/txt_progress"

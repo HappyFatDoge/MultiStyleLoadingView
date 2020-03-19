@@ -1,4 +1,4 @@
-package com.fatwood.loadingview;
+package com.fatdoge.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(ShowAlarmClockActivity.class);
                 break;
             case R.id.btn_happy_fat_wood:
-                startActivity(ShowHappyFatWoodLoadingActivity.class);
+                startActivity(ShowHappyFatDogeLoadingActivity.class);
                 break;
         }
     }

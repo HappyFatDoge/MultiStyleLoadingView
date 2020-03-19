@@ -11,13 +11,13 @@
         <attr name="desTextColor" format="color|reference" />
     </declare-styleable>
 
-    <declare-styleable name="HappyFatWoodLoadingView">
+    <declare-styleable name="HappyFatDogeLoadingView">
         <attr name="withProgressDisplay" format="boolean" />
-        <attr name="fatWoodProgress" format="integer|reference" />
-        <attr name="fatWoodProgressTextSize" format="dimension|reference" />
-        <attr name="fatWoodProgressTextColor" format="color|reference" />
-        <attr name="fatWoodProgressDescription" format="string|reference" />
-        <attr name="fatWoodDesTextSize" format="dimension|reference" />
-        <attr name="fatWoodDesTextColor" format="color|reference" />
+        <attr name="fatDogeProgress" format="integer|reference" />
+        <attr name="fatDogeProgressTextSize" format="dimension|reference" />
+        <attr name="fatDogeProgressTextColor" format="color|reference" />
+        <attr name="fatDogeProgressDescription" format="string|reference" />
+        <attr name="fatDogeDesTextSize" format="dimension|reference" />
+        <attr name="fatDogeDesTextColor" format="color|reference" />
     </declare-styleable>
 </resources>

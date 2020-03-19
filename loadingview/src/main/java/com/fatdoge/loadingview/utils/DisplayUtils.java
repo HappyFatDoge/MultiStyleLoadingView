@@ -1,4 +1,4 @@
-package com.fatwood.loadingview.utils;
+package com.fatdoge.loadingview.utils;
 
 import android.content.Context;
 

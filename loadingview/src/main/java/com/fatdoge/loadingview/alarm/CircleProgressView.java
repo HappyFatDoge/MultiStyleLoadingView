@@ -1,4 +1,4 @@
-package com.fatwood.loadingview.alarm;
+package com.fatdoge.loadingview.alarm;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,7 +9,8 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.fatwood.lib_multistyleloadingview.R;
+import com.fatdoge.loadingview.R;
+
 
 /**
  * @author HappyFatWood 2575490085@qq.com

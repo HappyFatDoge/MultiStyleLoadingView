@@ -17,7 +17,7 @@
             android:contentDescription="@string/alarm_clock_background_des"
             android:layout_centerHorizontal="true" />
 
-        <com.fatwood.loadingview.alarm.CircleProgressView
+        <com.fatdoge.loadingview.alarm.CircleProgressView
             android:id="@+id/circle_progress"
             android:layout_width="@dimen/common_width_53dp"
             android:layout_height="@dimen/common_height_53dp"

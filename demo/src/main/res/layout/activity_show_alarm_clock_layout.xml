@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fatwood="http://schemas.android.com/apk/res-auto"
+    xmlns:fatdoge="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,12 +17,12 @@
         android:progress="0"
         android:indeterminate="false"/>
 
-    <com.fatwood.loadingview.alarm.AlarmClockLoadingView
+    <com.fatdoge.loadingview.alarm.AlarmClockLoadingView
         android:id="@+id/alarm_clock_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        fatwood:progressDescription="加载中..."
-        fatwood:timeForSpeed="500"/>
+        fatdoge:progressDescription="加载中..."
+        fatdoge:timeForSpeed="500"/>
 
 </LinearLayout>

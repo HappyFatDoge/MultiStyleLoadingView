@@ -1,4 +1,4 @@
-package com.fatwood.loadingview;
+package com.fatdoge.demo;
 
 import org.junit.Test;
 

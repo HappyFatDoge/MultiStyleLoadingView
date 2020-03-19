@@ -1,4 +1,4 @@
-package com.fatwood.loadingview.fatwood;
+package com.fatdoge.loadingview.fatdoge;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -14,14 +14,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.fatwood.lib_multistyleloadingview.R;
-import com.fatwood.loadingview.utils.ConstantUtils;
+import com.fatdoge.loadingview.R;
+import com.fatdoge.loadingview.utils.ConstantUtils;
 
 /**
  * @author HappyFatWood 2575490085@qq.com
  * Created on 2020/3/13.
  */
-public class HappyFatWoodLoadingView extends RelativeLayout {
+public class HappyFatDogeLoadingView extends RelativeLayout {
 
     private Context mContext;
     private ImageView mImageExpression;
@@ -42,38 +42,38 @@ public class HappyFatWoodLoadingView extends RelativeLayout {
     private final float DEFAULT_PROGRESS_TEXT_SIZE = 39.0f;
     private final float DEFAULT_DES_TEXT_SIZE = 33.0f;
 
-    public HappyFatWoodLoadingView(Context context) throws Exception {
+    public HappyFatDogeLoadingView(Context context) throws Exception {
         this(context, null);
     }
 
-    public HappyFatWoodLoadingView(Context context, AttributeSet attrs) throws Exception {
+    public HappyFatDogeLoadingView(Context context, AttributeSet attrs) throws Exception {
         this(context, attrs, 0);
     }
 
-    public HappyFatWoodLoadingView(Context context, AttributeSet attrs, int defStyleAttr) throws Exception {
+    public HappyFatDogeLoadingView(Context context, AttributeSet attrs, int defStyleAttr) throws Exception {
         super(context, attrs, defStyleAttr);
         mContext = context;
         initAttrs(attrs);
-        View rootView = inflate(mContext, R.layout.view_happy_fat_wood_loading_layout, this);
+        View rootView = inflate(mContext, R.layout.view_happy_fat_doge_loading_layout, this);
         initView(rootView);
     }
 
     private void initAttrs(AttributeSet attributeSet) {
         Resources resources = mContext.getResources();
         TypedArray typedArray = mContext.obtainStyledAttributes(
-                attributeSet, R.styleable.HappyFatWoodLoadingView);
+                attributeSet, R.styleable.HappyFatDogeLoadingView);
         mWithProgressDisplay = typedArray.getBoolean(
-                R.styleable.HappyFatWoodLoadingView_withProgressDisplay, DEFAULT_WITH_PROGRESS_DISPLAY);
-        mProgress = typedArray.getInteger(R.styleable.HappyFatWoodLoadingView_fatWoodProgress,
+                R.styleable.HappyFatDogeLoadingView_withProgressDisplay, DEFAULT_WITH_PROGRESS_DISPLAY);
+        mProgress = typedArray.getInteger(R.styleable.HappyFatDogeLoadingView_fatDogeProgress,
                 ConstantUtils.DEFAULT_PROGRESS);
-        mProgressTextSize = typedArray.getDimension(R.styleable.HappyFatWoodLoadingView_fatWoodProgressTextSize,
+        mProgressTextSize = typedArray.getDimension(R.styleable.HappyFatDogeLoadingView_fatDogeProgressTextSize,
                 DEFAULT_PROGRESS_TEXT_SIZE);
-        mProgressTextColor = typedArray.getColor(R.styleable.HappyFatWoodLoadingView_fatWoodProgressTextColor,
+        mProgressTextColor = typedArray.getColor(R.styleable.HappyFatDogeLoadingView_fatDogeProgressTextColor,
                 resources.getColor(R.color.color_E6CA7E));
-        mDescription = typedArray.getString(R.styleable.HappyFatWoodLoadingView_fatWoodProgressDescription);
-        mDesTextSize = typedArray.getDimension(R.styleable.HappyFatWoodLoadingView_fatWoodDesTextSize,
+        mDescription = typedArray.getString(R.styleable.HappyFatDogeLoadingView_fatDogeProgressDescription);
+        mDesTextSize = typedArray.getDimension(R.styleable.HappyFatDogeLoadingView_fatDogeDesTextSize,
                 DEFAULT_DES_TEXT_SIZE);
-        mDesTextColor = typedArray.getColor(R.styleable.HappyFatWoodLoadingView_fatWoodDesTextColor,
+        mDesTextColor = typedArray.getColor(R.styleable.HappyFatDogeLoadingView_fatDogeDesTextColor,
                 resources.getColor(R.color.color_FFFFFF));
         typedArray.recycle();
     }
@@ -99,7 +99,7 @@ public class HappyFatWoodLoadingView extends RelativeLayout {
         if (mWithProgressDisplay) {
             return;
         }
-        mImageExpression.setImageResource(R.drawable.anim_fat_wood_thinking);
+        mImageExpression.setImageResource(R.drawable.anim_fat_doge_thinking);
         AnimationDrawable animationDrawable = (AnimationDrawable) mImageExpression.getDrawable();
         animationDrawable.start();
     }
@@ -134,16 +134,16 @@ public class HappyFatWoodLoadingView extends RelativeLayout {
         }
         if (mProgress < ConstantUtils.HALF_THRESHOLD) {
             if (mCurrentType != ConstantUtils.TYPE_SAD) {
-                setExpression(R.drawable.fat_wood_cry, R.drawable.fat_wood_cry_tears);
+                setExpression(R.drawable.fat_doge_cry, R.drawable.fat_doge_cry_tears);
                 mCurrentType = ConstantUtils.TYPE_SAD;
             }
         } else if (mProgress < ConstantUtils.FOUR_FIFTHS_THRESHOLD) {
             if (mCurrentType != ConstantUtils.TYPE_ANGRY) {
-                setExpression(R.drawable.fat_wood_angry, R.drawable.fat_wood_angry_bubble);
+                setExpression(R.drawable.fat_doge_angry, R.drawable.fat_doge_angry_bubble);
                 mCurrentType = ConstantUtils.TYPE_ANGRY;
             }
         } else if (mCurrentType != ConstantUtils.TYPE_HAPPY){
-            setExpression(R.drawable.fat_wood_leisurely, R.drawable.fat_wood_leisurely_bubble);
+            setExpression(R.drawable.fat_doge_leisurely, R.drawable.fat_doge_leisurely_bubble);
             mCurrentType = ConstantUtils.TYPE_HAPPY;
         }
     }
@@ -210,7 +210,7 @@ public class HappyFatWoodLoadingView extends RelativeLayout {
 
     public void finish() {
         if (!mWithProgressDisplay) {
-            mImageExpression.setImageResource(R.drawable.fat_wood_thinking_finish);
+            mImageExpression.setImageResource(R.drawable.fat_doge_thinking_finish);
         }
     }
 }

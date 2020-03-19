@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:fatwood="http://schemas.android.com/apk/res-auto"
+    xmlns:fatdoge="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/color_4A4A4A"
-    tools:context=".ShowHappyFatWoodLoadingActivity">
+    android:background="@color/color_4A4A4A">
 
     <Button
         android:id="@+id/btn_finish"
@@ -16,11 +15,11 @@
         android:onClick="onClick"
         android:layout_gravity="center_horizontal"/>
 
-    <com.fatwood.loadingview.fatwood.HappyFatWoodLoadingView
+    <com.fatdoge.loadingview.fatdoge.HappyFatDogeLoadingView
         android:id="@+id/happy_fat_wood_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        fatwood:withProgressDisplay="false"
+        fatdoge:withProgressDisplay="false"
         android:layout_gravity="center_horizontal"/>
 
     <SeekBar
@@ -31,12 +30,12 @@
         android:progress="0"
         android:indeterminate="false"/>
 
-    <com.fatwood.loadingview.fatwood.HappyFatWoodLoadingView
+    <com.fatdoge.loadingview.fatdoge.HappyFatDogeLoadingView
         android:id="@+id/happy_fat_wood_view_02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        fatwood:withProgressDisplay="true"
-        fatwood:fatWoodProgressDescription="加载中..."
+        fatdoge:withProgressDisplay="true"
+        fatdoge:fatDogeProgressDescription="加载中..."
         android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

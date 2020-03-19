@@ -1,4 +1,4 @@
-package com.fatwood.loadingview;
+package com.fatdoge.lib_multistyleloadingview;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.fatwood.multistyleloadingview", appContext.getPackageName());
+        assertEquals("com.fatwood.lib_multistyleloadingview.test", appContext.getPackageName());
     }
 }

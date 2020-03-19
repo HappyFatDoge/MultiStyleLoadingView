@@ -1,4 +1,4 @@
-package com.fatwood.loadingview;
+package com.fatdoge.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,28 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.SeekBar;
 
-import com.fatwood.loadingview.fatwood.HappyFatWoodLoadingView;
+import com.fatdoge.loadingview.fatdoge.HappyFatDogeLoadingView;
 
-public class ShowHappyFatWoodLoadingActivity extends AppCompatActivity {
+public class ShowHappyFatDogeLoadingActivity extends AppCompatActivity {
 
-    private HappyFatWoodLoadingView mHappyFatWoodLoadingView;
-    private HappyFatWoodLoadingView mHappyFatWoodLoadingViewT;
+    private HappyFatDogeLoadingView mHappyFatDogeLoadingView;
+    private HappyFatDogeLoadingView mHappyFatDogeLoadingViewT;
     private SeekBar mSeekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_happy_fat_wood_loading_layout);
+        setContentView(R.layout.activity_show_happy_fat_doge_loading_layout);
         initView();
         initEvent();
     }
 
     private void initView() {
-        mHappyFatWoodLoadingView = findViewById(R.id.happy_fat_wood_view);
-        mHappyFatWoodLoadingViewT = findViewById(R.id.happy_fat_wood_view_02);
+        mHappyFatDogeLoadingView = findViewById(R.id.happy_fat_wood_view);
+        mHappyFatDogeLoadingViewT = findViewById(R.id.happy_fat_wood_view_02);
         mSeekBar = findViewById(R.id.seekBar);
         try {
-            mHappyFatWoodLoadingViewT.setProgress(0);
+            mHappyFatDogeLoadingViewT.setProgress(0);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -38,7 +38,7 @@ public class ShowHappyFatWoodLoadingActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 try {
-                    mHappyFatWoodLoadingViewT.setProgress(progress);
+                    mHappyFatDogeLoadingViewT.setProgress(progress);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -58,7 +58,7 @@ public class ShowHappyFatWoodLoadingActivity extends AppCompatActivity {
         int viewId = view.getId();
         switch (viewId) {
             case R.id.btn_finish:
-                mHappyFatWoodLoadingView.finish();
+                mHappyFatDogeLoadingView.finish();
                 break;
         }
     }

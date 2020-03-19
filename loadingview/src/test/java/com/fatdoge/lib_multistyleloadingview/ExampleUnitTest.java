@@ -1,4 +1,4 @@
-package com.fatwood.lib_multistyleloadingview;
+package com.fatdoge.lib_multistyleloadingview;
 
 import org.junit.Test;
 

@@ -1,11 +1,11 @@
-package com.fatwood.loadingview;
+package com.fatdoge.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.SeekBar;
 
-import com.fatwood.loadingview.alarm.AlarmClockLoadingView;
+import com.fatdoge.loadingview.alarm.AlarmClockLoadingView;
 
 public class ShowAlarmClockActivity extends AppCompatActivity {
 
