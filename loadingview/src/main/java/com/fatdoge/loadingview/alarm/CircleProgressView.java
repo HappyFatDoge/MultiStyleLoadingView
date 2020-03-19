@@ -62,7 +62,7 @@ public class CircleProgressView extends View {
     }
 
     /**
-     * 进度范围：0-100
+     * Progress range:0-100
      * @param progress
      */
     public void setProgress(int progress) {

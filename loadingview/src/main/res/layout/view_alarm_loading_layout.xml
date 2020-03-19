@@ -22,7 +22,7 @@
             android:layout_width="@dimen/common_width_53dp"
             android:layout_height="@dimen/common_height_53dp"
             android:layout_marginStart="@dimen/common_width_13dp"
-            android:layout_above="@+id/txt_progress"
+            android:layout_alignBottom="@+id/image_expression"
             android:layout_marginBottom="@dimen/common_height_6dp"/>
 
         <ImageView
@@ -41,24 +41,24 @@
             android:contentDescription="@string/alarm_clock_expression"
             android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:id="@+id/txt_progress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/image_expression"
-            android:layout_centerHorizontal="true"
-            android:text="@string/alarm_clock_progress"
-            android:textColor="@color/color_EDBA2D"
-            android:textSize="@dimen/common_font_14sp"
-            android:includeFontPadding="false" />
-
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_alarm_clock"
+        android:layout_centerHorizontal="true"
+        android:text="@string/alarm_clock_progress"
+        android:textColor="@color/color_EDBA2D"
+        android:textSize="@dimen/common_font_14sp"
+        android:includeFontPadding="false" />
 
     <TextView
         android:id="@+id/txt_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_alarm_clock"
+        android:layout_below="@+id/txt_progress"
         android:layout_centerHorizontal="true"
         android:text="@string/alarm_clock_description"
         android:textColor="@color/color_FFFFFF"

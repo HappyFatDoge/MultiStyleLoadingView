@@ -179,7 +179,7 @@ public class AlarmClockLoadingView extends RelativeLayout {
     }
 
     /**
-     * 设置闹钟转动一圈时间
+     * Set the second hand rotation time
      * @param time
      */
     public void setSecondHandSpeed(int time) {
