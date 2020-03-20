@@ -23,7 +23,6 @@ public class ShowAlarmClockActivity extends AppCompatActivity {
     private void initView() {
         mSeekBar = findViewById(R.id.seekBar);
         mAlarmClockLoadingView = findViewById(R.id.alarm_clock_loading);
-
         mAlarmClockLoadingView.setSecondHandSpeed(500);
         try {
             mAlarmClockLoadingView.setProgress(0);
