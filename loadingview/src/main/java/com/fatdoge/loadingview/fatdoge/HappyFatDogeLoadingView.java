@@ -89,10 +89,9 @@ public class HappyFatDogeLoadingView extends RelativeLayout {
         } else {
             mImageBubble.setVisibility(VISIBLE);
             mTxtProgress.setVisibility(VISIBLE);
-            mTxtDescription.setVisibility(VISIBLE);
             initProgress();
-            initDescription();
         }
+        initDescription();
     }
 
     private void setThinkingAnim() {
@@ -116,9 +115,6 @@ public class HappyFatDogeLoadingView extends RelativeLayout {
     }
 
     private void initDescription() {
-        if (!mWithProgressDisplay) {
-            return;
-        }
         setDescription(mDescription);
         setDescriptionTextSize(TypedValue.COMPLEX_UNIT_PX, mDesTextSize);
         setDescriptionTextColor(mDesTextColor);
@@ -149,11 +145,17 @@ public class HappyFatDogeLoadingView extends RelativeLayout {
     }
 
     private void setExpression(int resource, int animResource) {
+        if (!mWithProgressDisplay) {
+            return;
+        }
         mImageExpression.setImageResource(resource);
         setBubbleAnim(animResource);
     }
 
     private void setBubbleAnim(int resourceID) {
+        if (!mWithProgressDisplay) {
+            return;
+        }
         mImageBubble.setImageResource(resourceID);
         ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(
                 mImageBubble, "alpha", 1f, 0.2f);
@@ -176,15 +178,24 @@ public class HappyFatDogeLoadingView extends RelativeLayout {
     }
 
     public void setProgressTextSize(float textSize) {
+        if (!mWithProgressDisplay) {
+            return;
+        }
         setProgressTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
     }
 
     public void setProgressTextSize(int unit, float textSize) {
+        if (!mWithProgressDisplay) {
+            return;
+        }
         mProgressTextSize = textSize;
         mTxtProgress.setTextSize(unit, mProgressTextSize);
     }
 
     public void setProgressTextColor(int color) {
+        if (!mWithProgressDisplay) {
+            return;
+        }
         mProgressTextColor = color;
         mTxtProgress.setTextColor(mProgressTextColor);
     }

@@ -48,7 +48,6 @@
         android:text="@string/alarm_clock_description"
         android:textColor="@color/color_FFFFFF"
         android:textSize="@dimen/common_font_12sp"
-        android:includeFontPadding="false"
-        android:visibility="gone"/>
+        android:includeFontPadding="false"/>
 
 </RelativeLayout>

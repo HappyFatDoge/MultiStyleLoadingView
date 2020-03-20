@@ -1,6 +1,6 @@
 # MultiStyleLoadingView #
 <p align="center">
-    <img src="https://img.shields.io/badge/version-1.0.0-brightgreen.svg">
+    <img src="https://img.shields.io/badge/version-1.0.2-brightgreen.svg">
     <img src="https://img.shields.io/badge/build%20-passing-brightgreen.svg">
     <img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg">
     <img src="https://img.shields.io/badge/Author-HappyFatDoge-orange.svg">
@@ -11,7 +11,7 @@
 ## Download ##
 
 ```
-implementation 'com.fatdoge.loadingview:MultiStyleLoadingView:1.0.0'
+implementation 'com.fatdoge.loadingview:MultiStyleLoadingView:1.0.2'
 ```
 
 ##  可供使用的进度加载view ##
