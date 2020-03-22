@@ -1,0 +1,12 @@
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'fatdoge'
+    repoName = 'maven'
+    groupId = 'com.fatdoge.loadingview'
+    artifactId = 'MultiStyleLoadingView'
+    publishVersion = '1.0.3'
+    desc = 'A multi-style progress load view library for Android'
+    website = 'https://github.com/HappyFatDoge/MultiStyleLoadingView'
+    licences = ['Apache-2.0']
+}
