@@ -23,4 +23,8 @@ public class ConstantUtils {
     public static final int TYPE_ANGRY = 1;
 
     public static final int TYPE_HAPPY = 2;
+
+    public static final float DEFAULT_PROGRESS_TEXT_SIZE = 39.0f;
+
+    public static final float DEFAULT_DES_TEXT_SIZE = 33.0f;
 }

@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <attr name="progress" format="integer|reference" />
+    <attr name="progressTextSize" format="dimension|reference" />
+    <attr name="progressTextColor" format="color|reference" />
+    <attr name="progressDescription" format="string|reference" />
+    <attr name="desTextSize" format="dimension|reference" />
+    <attr name="desTextColor" format="color|reference" />
+    
     <declare-styleable name="AlarmClockLoadingView">
         <attr name="timeForSpeed" format="integer|reference" />
-        <attr name="progress" format="integer|reference" />
-        <attr name="progressTextSize" format="dimension|reference" />
-        <attr name="progressTextColor" format="color|reference" />
-        <attr name="progressDescription" format="string|reference" />
-        <attr name="desTextSize" format="dimension|reference" />
-        <attr name="desTextColor" format="color|reference" />
+        <attr name="progress" />
+        <attr name="progressTextSize" />
+        <attr name="progressTextColor" />
+        <attr name="progressDescription" />
+        <attr name="desTextSize" />
+        <attr name="desTextColor" />
     </declare-styleable>
 
     <declare-styleable name="HappyFatDogeLoadingView">
         <attr name="withProgressDisplay" format="boolean" />
-        <attr name="fatDogeProgress" format="integer|reference" />
-        <attr name="fatDogeProgressTextSize" format="dimension|reference" />
-        <attr name="fatDogeProgressTextColor" format="color|reference" />
-        <attr name="fatDogeProgressDescription" format="string|reference" />
-        <attr name="fatDogeDesTextSize" format="dimension|reference" />
-        <attr name="fatDogeDesTextColor" format="color|reference" />
+        <attr name="progress" />
+        <attr name="progressTextSize" />
+        <attr name="progressTextColor" />
+        <attr name="progressDescription" />
+        <attr name="desTextSize" />
+        <attr name="desTextColor" />
     </declare-styleable>
 </resources>

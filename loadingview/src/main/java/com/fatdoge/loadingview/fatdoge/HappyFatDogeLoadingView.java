@@ -39,8 +39,6 @@ public class HappyFatDogeLoadingView extends RelativeLayout {
     private int mCurrentType = ConstantUtils.TYPE_ERROR;
 
     private final boolean DEFAULT_WITH_PROGRESS_DISPLAY = false;
-    private final float DEFAULT_PROGRESS_TEXT_SIZE = 39.0f;
-    private final float DEFAULT_DES_TEXT_SIZE = 33.0f;
 
     public HappyFatDogeLoadingView(Context context) throws Exception {
         this(context, null);
@@ -64,16 +62,16 @@ public class HappyFatDogeLoadingView extends RelativeLayout {
                 attributeSet, R.styleable.HappyFatDogeLoadingView);
         mWithProgressDisplay = typedArray.getBoolean(
                 R.styleable.HappyFatDogeLoadingView_withProgressDisplay, DEFAULT_WITH_PROGRESS_DISPLAY);
-        mProgress = typedArray.getInteger(R.styleable.HappyFatDogeLoadingView_fatDogeProgress,
+        mProgress = typedArray.getInteger(R.styleable.HappyFatDogeLoadingView_progress,
                 ConstantUtils.DEFAULT_PROGRESS);
-        mProgressTextSize = typedArray.getDimension(R.styleable.HappyFatDogeLoadingView_fatDogeProgressTextSize,
-                DEFAULT_PROGRESS_TEXT_SIZE);
-        mProgressTextColor = typedArray.getColor(R.styleable.HappyFatDogeLoadingView_fatDogeProgressTextColor,
+        mProgressTextSize = typedArray.getDimension(R.styleable.HappyFatDogeLoadingView_progressTextSize,
+                ConstantUtils.DEFAULT_PROGRESS_TEXT_SIZE);
+        mProgressTextColor = typedArray.getColor(R.styleable.HappyFatDogeLoadingView_progressTextColor,
                 resources.getColor(R.color.color_E6CA7E));
-        mDescription = typedArray.getString(R.styleable.HappyFatDogeLoadingView_fatDogeProgressDescription);
-        mDesTextSize = typedArray.getDimension(R.styleable.HappyFatDogeLoadingView_fatDogeDesTextSize,
-                DEFAULT_DES_TEXT_SIZE);
-        mDesTextColor = typedArray.getColor(R.styleable.HappyFatDogeLoadingView_fatDogeDesTextColor,
+        mDescription = typedArray.getString(R.styleable.HappyFatDogeLoadingView_progressDescription);
+        mDesTextSize = typedArray.getDimension(R.styleable.HappyFatDogeLoadingView_desTextSize,
+                ConstantUtils.DEFAULT_DES_TEXT_SIZE);
+        mDesTextColor = typedArray.getColor(R.styleable.HappyFatDogeLoadingView_desTextColor,
                 resources.getColor(R.color.color_FFFFFF));
         typedArray.recycle();
     }

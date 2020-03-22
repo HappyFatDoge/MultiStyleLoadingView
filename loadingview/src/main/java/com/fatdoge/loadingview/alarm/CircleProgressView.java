@@ -16,7 +16,7 @@ import com.fatdoge.loadingview.R;
  * @author HappyFatWood 2575490085@qq.com
  * Created on 2020/3/8.
  */
-public class CircleProgressView extends View {
+class CircleProgressView extends View {
 
     private Paint mPaint;
     private int mProgress;

@@ -41,8 +41,6 @@ public class AlarmClockLoadingView extends RelativeLayout {
     private int mCurrentType = ConstantUtils.TYPE_ERROR;
 
     private final int DEFAULT_TIME = 500;
-    private final float DEFAULT_PROGRESS_TEXT_SIZE = 39.0f;
-    private final float DEFAULT_DES_TEXT_SIZE = 33.0f;
 
     public AlarmClockLoadingView(Context context) throws Exception {
         this(context, null);
@@ -69,12 +67,12 @@ public class AlarmClockLoadingView extends RelativeLayout {
         mProgress = typedArray.getInteger(R.styleable.AlarmClockLoadingView_progress,
                 ConstantUtils.DEFAULT_PROGRESS);
         mProgressTextSize = typedArray.getDimension(R.styleable.AlarmClockLoadingView_progressTextSize,
-                DEFAULT_PROGRESS_TEXT_SIZE);
+                ConstantUtils.DEFAULT_PROGRESS_TEXT_SIZE);
         mProgressTextColor = typedArray.getColor(R.styleable.AlarmClockLoadingView_progressTextColor,
                 resources.getColor(R.color.color_EDBA2D));
         mDescription = typedArray.getString(R.styleable.AlarmClockLoadingView_progressDescription);
         mDesTextSize = typedArray.getDimension(R.styleable.AlarmClockLoadingView_desTextSize,
-                DEFAULT_DES_TEXT_SIZE);
+                ConstantUtils.DEFAULT_DES_TEXT_SIZE);
         mDesTextColor = typedArray.getColor(R.styleable.AlarmClockLoadingView_desTextColor,
                 resources.getColor(R.color.color_FFFFFF));
         typedArray.recycle();
@@ -88,8 +86,8 @@ public class AlarmClockLoadingView extends RelativeLayout {
         mTxtDescription = rootView.findViewById(R.id.txt_description);
 
         initProgress();
-        mImageSecondHand.setPivotX(DisplayUtils.dp2px(mContext, 39.63f));
-        mImageSecondHand.setPivotY(DisplayUtils.dp2px(mContext, 48.48f));
+        mImageSecondHand.setPivotX(DisplayUtils.dp2px(mContext, 39.4f));
+        mImageSecondHand.setPivotY(DisplayUtils.dp2px(mContext, 48.2f));
         setSecondHandSpeed(mTime);
         initDescription();
     }

@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         fatdoge:withProgressDisplay="false"
-        fatdoge:fatDogeProgressDescription="加载中..."
+        fatdoge:progressDescription="加载中..."
         android:layout_gravity="center_horizontal"/>
 
     <SeekBar
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         fatdoge:withProgressDisplay="true"
-        fatdoge:fatDogeProgressDescription="加载中..."
+        fatdoge:progressDescription="加载中..."
         android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
