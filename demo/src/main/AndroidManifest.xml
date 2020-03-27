@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.fatdoge.demo.ShowHappyFatDogeLoadingActivity" />
-        <activity android:name="com.fatdoge.demo.ShowAlarmClockActivity" />
-        <activity android:name="com.fatdoge.demo.MainActivity">
+        <activity android:name=".ShowWaveBallLoadingActivity" />
+        <activity android:name=".ShowHappyFatDogeLoadingActivity" />
+        <activity android:name=".ShowAlarmClockActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

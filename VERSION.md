@@ -22,3 +22,9 @@
   2. 统一loadingview共有属性；
   3. 隐藏不必要view；
   4. 修改闹钟loadingview秒针旋转中心位置；
+
+
+
+* version 1.0.4
+  1. 闹钟进度加载view代码修整，资源整理；
+  2. 新增波浪球进度加载view；

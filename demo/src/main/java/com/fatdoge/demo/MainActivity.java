@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_happy_fat_wood:
                 startActivity(ShowHappyFatDogeLoadingActivity.class);
                 break;
+            case R.id.btn_wave_ball:
+                startActivity(ShowWaveBallLoadingActivity.class);
+                break;
         }
     }
 
