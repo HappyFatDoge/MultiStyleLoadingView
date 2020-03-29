@@ -27,4 +27,33 @@
         <attr name="desTextSize" />
         <attr name="desTextColor" />
     </declare-styleable>
+
+    <declare-styleable name="RingView">
+        <attr name="ringOuterRadius" format="dimension|reference" />
+        <attr name="ringWidth" format="dimension|reference" />
+        <attr name="startColor" format="color|reference"/>
+        <attr name="endColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="OvalRingView">
+        <attr name="ovalRingOuterMaxRadius" format="dimension|reference" />
+        <attr name="ovalRingInnerRadius" format="dimension|reference" />
+        <attr name="ovalRingMinWidth" format="dimension|reference" />
+        <attr name="ovalRingMaxWidth" format="dimension|reference" />
+        <attr name="ovalRingColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveBallLoadingView">
+        <attr name="ringOuterRadius" />
+        <attr name="ringWidth" />
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="ovalRingColor" />
+        <attr name="progress" />
+        <attr name="progressTextSize" />
+        <attr name="progressTextColor" />
+        <attr name="progressDescription" />
+        <attr name="desTextSize" />
+        <attr name="desTextColor" />
+    </declare-styleable>
 </resources>

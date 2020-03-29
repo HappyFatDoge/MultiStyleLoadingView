@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
 import com.fatdoge.loadingview.R;
+import com.fatdoge.loadingview.utils.ConstantUtils;
 
 
 /**
@@ -20,8 +21,7 @@ class CircleProgressView extends View {
 
     private Paint mPaint;
     private int mProgress;
-    private final int MAX_PROGRESS = 100;
-    private final int MIN_PROGRESS = 0;
+
     private final int MAX_RANGE = 360;
     private final int HALF_RANGE = 180;
 
@@ -51,10 +51,10 @@ class CircleProgressView extends View {
         mPaint.setColor(getResources().getColor(R.color.color_B3373636));
         mPaint.setAntiAlias(true);
         mPaint.setStyle(Paint.Style.FILL);
-        if (mProgress > MAX_PROGRESS) {
+        if (mProgress > ConstantUtils.MAX_PROGRESS) {
             return;
         }
-        float sweepAngle = MAX_RANGE * (mProgress / (MAX_PROGRESS * 1f));
+        float sweepAngle = MAX_RANGE * (mProgress / (ConstantUtils.MAX_PROGRESS * 1f));
         float startAngle = (HALF_RANGE - sweepAngle) / 2;
         float left = (width - height >> 1) >> 1;
         canvas.drawArc(left, 0, width - left, height,
@@ -66,7 +66,8 @@ class CircleProgressView extends View {
      * @param progress
      */
     public void setProgress(int progress) {
-        if (progress < MIN_PROGRESS || progress > MAX_PROGRESS) {
+        if (progress < ConstantUtils.MIN_PROGRESS
+                || progress > ConstantUtils.MAX_PROGRESS) {
             return;
         }
         mProgress = progress;

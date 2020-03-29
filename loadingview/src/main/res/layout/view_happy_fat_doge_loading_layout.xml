@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout_happy_fat_wood"
         android:layout_centerHorizontal="true"
-        android:text="@string/alarm_clock_progress"
+        android:text="@string/progress"
         android:textColor="@color/color_E6CA7E"
         android:textSize="@dimen/common_font_14sp"
         android:includeFontPadding="false"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt_progress"
         android:layout_centerHorizontal="true"
-        android:text="@string/alarm_clock_description"
+        android:text="@string/description"
         android:textColor="@color/color_FFFFFF"
         android:textSize="@dimen/common_font_12sp"
         android:includeFontPadding="false"/>

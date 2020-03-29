@@ -27,4 +27,8 @@ public class ConstantUtils {
     public static final float DEFAULT_PROGRESS_TEXT_SIZE = 39.0f;
 
     public static final float DEFAULT_DES_TEXT_SIZE = 33.0f;
+
+    public static final int DEFAULT_OUTER_RADIUS = 200;
+
+    public static final int DEFAULT_RING_WIDTH = 20;
 }

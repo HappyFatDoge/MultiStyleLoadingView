@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fatdoge="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShowWaveBallLoadingActivity">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:indeterminate="false"/>
+
+    <com.fatdoge.loadingview.waveball.WaveBallLoadingView
+        android:id="@+id/wave_ball_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        fatdoge:ringOuterRadius="@dimen/common_width_100dp"
+        fatdoge:progressTextSize="@dimen/common_font_50sp"
+        fatdoge:desTextSize="@dimen/common_font_15sp"
+        fatdoge:ringWidth="@dimen/common_width_12dp"/>
+
+    <Button
+        android:id="@+id/btn_end_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="结束旋转动画"
+        android:onClick="onClick"/>
+
+</LinearLayout>
